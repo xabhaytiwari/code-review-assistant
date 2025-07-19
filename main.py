@@ -57,7 +57,7 @@ def review():
     user_code = request.form['code']
     user_config = request.form['config']
 
-    feedback = review_code(user_code, user_config)
+    feedback = review_code(user_code="", user_config="")
 
     return render_template('review.html', code=user_code, feedback=feedback)
 
