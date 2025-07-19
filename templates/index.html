@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Code Review Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      /* A little custom styling for the body */
+      body {
+        background-color: #f8f9fa;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="text-center mb-4">
+        <h1>🤖 AI Code Review Assistant</h1>
+        <p class="lead">Paste your code snippet below and get instant feedback.</p>
+      </div>
+
+      <form action="/review" method="post">
+        <div class="mb-3">
+          <label for="code-input" class="form-label">Your Code:</label>
+          <textarea class="form-control" id="code-input" name="code" rows="15" required placeholder="def my_function():&#10;    pass"></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="code-config-input" class="form-label">Code Config:</label>
+          <textarea class="form-control" id="code-config" name="config" rows="5" required placeholder="Language? Configurations?&#10;   Python"></textarea>
+        </div>
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Review My Code</button>
+        </div>
+      </form>
+
+
+    </div>
+  </body>
+</html>
