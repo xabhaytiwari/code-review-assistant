@@ -36,7 +36,7 @@ Follow these instructions to get a local copy up and running.
 
 1.  **Clone the repository:**
     ```sh
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/xabhaytiwari/code-review-assistant.git)
+    git clone https://github.com/xabhaytiwari/code-review-assistant.git
     cd code-review-assistant
     ```
 
